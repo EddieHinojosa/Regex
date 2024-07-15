@@ -1,49 +1,30 @@
-# Title (replace with your title)
+# Regex Tutorial for HEX values
 
-Introductory paragraph (replace this with your text)
+Regex (Regular expressions) can help a tool used to match what youbare searching via text.
+below will hvae a breakdown of how Hexadecimal values can be matched to finds the color you are looking for, including minimizing errors regarding cap sensitive input.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+<p>The purpose of Hexadecimal(HEX) values is to pull a percise color located on the color wheel/block.
+<p>Hex values can be search in various degrees of filters, it can be search from: <br>
+3-digit shorthand (e.g., #FFF) <br>
+6-digit full (e.g., #FFFFFF) <br>
+4-digit with alpha (e.g., #FFF7) <br>
+8-digit with alpha (e.g., #FFFFFFFF) <br>
+</p>
 
-## Table of Contents
 
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+<p>the code below will search based on the input given to locate the color desired.</p>
 
-## Regex Components
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
-### Anchors
+to make the search `case insensitive` you'll have to add `i` at the end: <br>
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/i`
 
-### Quantifiers
+alternatively you can also include upper case charaters: <br>
+`/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/`
 
-### OR Operator
-
-### Character Classes
-
-### Flags
-
-### Grouping and Capturing
-
-### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+created by EddieHinojosa @ [https://github.com/EddieHinojosa](https://github.com/EddieHinojosa)
